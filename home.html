@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+
+    <!-- update the version number as needed -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+
+<div class="navbar">
+  <span style="top:10px; display:inline-block; position:relative; width:100%; padding-bottom:7px">
+    <span style="display:inline;position:absolute;left:20px">
+      <input id="searchBar" type="text" placeholder="Type your friend's UNI">
+      <button id="btnSearch">ADD</button>
+    </span>
+    <button class="button open-modal button-primary" style="text-align:center; display:inline-block; position:absolute; left:45%">CREATE</button>
+    <button id="btnLogout" style="display:inline; float:right; margin-right:20px">Log out</button>
+  </span>
+</div>
+
+<!-- CREATE modal when create is clicked -->
+<!-- modal named "Simple modal for Skeleton.css" by Paul McClean taken from https://codepen.io/paulmcclean/pen/YGXWQY -->
+    <div class="modal">
+      <div class="modal-inner">
+        <div class="modal-content">
+          <div class="modal-close-icon">
+            <a href="javascript:void(0)" class="close-modal"><i class="fa fa-times" aria-hidden="true"></i></a>
+          </div>
+          <div class="modal-content-inner">
+            <h4 style="text-align:center; width:350px">New study session</h4><br><br>
+            <form style="text-align:center; transform: scale(1.25, 1.25)">
+            <input id="subject" type="text" style="width:200px" placeholder = "Subject"><br>
+            <select id="library" type="select" style="width:200px" placeholder = "Library">
+            <!-- <option selected disabled hidden>Study Location</option> -->
+                    <option selected value="Butler">Butler</option>
+                    <option value="Lehman">Lehman</option>
+                    <option value="Avery">Avery</option>
+                    <option value="Milstein">Milstein</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="NoCo">Science and Engineering Library</option>
+                    <option value="Social">Social Work</option>
+                    <option value="Watson">Watson Library (Business & Econ)</option></select><br>
+            <input id="start" type="text" style="width:200px" placeholder="Starting Time"><br>
+            <input id="finish" type="text" style="width:200px" placeholder="Ending Time"><br>
+            <select id="scope" type="select" style="width:200px" placeholder ="Scope of event">
+                   <option value="private">Only you</option>
+                   <option selected value="friends">Friends</option>
+                   <option value="everyone">Everyone</option></select>
+            </form>
+          </div>
+          <hr class="modal-buttons-seperator">
+          <div class="modal-buttons">
+            <button class="button close-modal">Cancel</button>
+            <button id="createEvent" class="button button-primary close-modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div id ="notifications" class="notifi" style="transform: scale(0.9, 0.9)">
+
+<div id ="div5" class="card" style="transform: scale(0.9, 0.9)">
+</div>
+
+      <script src="home.js"></script>
+  </body>
+</html>
+<!--ETKİNLİKLERİN OLDUĞU ANA SAYFA-->

@@ -1,0 +1,150 @@
+
+body{
+  height:1000px;
+  background: linear-gradient(to bottom, #67b26f, #4ca2cd);
+
+}
+
+/*Navbar*/
+.navbar{
+  position:fixed;
+  top:0px;
+  left:0px;
+  background-color:#d3d3d3;
+  width:100%;
+}
+
+
+
+/*Create event modal*/
+/*modal named "Simple modal for Skeleton.css" by Paul McClean taken from https://codepen.io/paulmcclean/pen/YGXWQY*/
+@import "https://fonts.googleapis.com/css?family=Raleway";
+ .modal {
+	 position: fixed;
+	 left: 0;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 background-color: rgba(0, 0, 0, 0.65);
+	 visibility: hidden;
+	 backface-visibility: hidden;
+	 opacity: 0;
+	 transition: opacity 0.15s ease-in-out;
+}
+ .modal.modal-open {
+	 visibility: visible;
+	 backface-visibility: visible;
+	 opacity: 1;
+	 z-index: 1;
+}
+ .modal .modal-inner {
+	 position: relative;
+	 height: 100%;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+}
+ .modal .modal-inner .modal-content {
+	 background-color: white;
+	 max-width: 35em;
+	 padding: 1em 1.5em;
+	 position: relative;
+	 margin: 2em;
+	 box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+}
+ .modal .modal-inner .modal-content .modal-close-icon {
+	 position: absolute;
+	 right: 1.5em;
+}
+ .modal .modal-inner .modal-content .modal-content-inner {
+	 padding-right: 2em;
+}
+ .modal .modal-inner .modal-content .modal-content-inner h1, .modal .modal-inner .modal-content .modal-content-inner h2, .modal .modal-inner .modal-content .modal-content-inner h3, .modal .modal-inner .modal-content .modal-content-inner h4, .modal .modal-inner .modal-content .modal-content-inner h5, .modal .modal-inner .modal-content .modal-content-inner h6 {
+	 margin-bottom: 0.25em;
+}
+ .modal .modal-inner .modal-content .modal-content-inner p {
+	 margin-bottom: 1em;
+}
+ .modal .modal-inner .modal-content .modal-buttons-seperator {
+	 margin: 1.5em 0;
+	 margin-top: 0;
+}
+ .modal .modal-inner .modal-content .modal-buttons {
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: flex-end;
+	 align-items: center;
+}
+ .modal .modal-inner .modal-content .modal-buttons button {
+	 margin-left: 1em;
+}
+ .modal .modal-inner .modal-content .modal-buttons button:first-child {
+	 margin-left: 0;
+}
+ .demo-container {
+	 text-align: center;
+}
+
+/* added by Bora */
+.card {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  width: 400px;
+  margin: 50px auto;
+  white-space: nowrap;
+}
+
+/*Event card*/
+.wrapper {
+  background: #1EAEDB;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.upper {
+  border-bottom: 1px solid rgba(255, 255, 255, .7);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2;
+
+}
+
+.meetup {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.group {
+  flex-grow: 1;
+}
+
+.icon {
+  display: inline-block;
+  position: relative;
+  top: -.1em;
+  vertical-align: middle;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.row-item {
+  padding-left: 10px;
+}

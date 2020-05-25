@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StudyMates</title>
+
+    <!-- update the version number as needed -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+
+  <body>
+    <button id="btnLogout" style="float:right; margin-top:-24vh">Log out</button>
+    <div style="text-align:center; margin-top:25vh; transform: scale(1.25, 1.25);">
+      <h2 style="font-weight:bold; color:white">StudyMates</h2>
+      <input id="txtEmail" style="width:225px" type="email" placeholder="Email"><br>
+      <input id="txtPass" style="width:225px" type="password" placeholder="Password"><br>
+      <button class="button-primary" id="btnLogin">Log in</button>
+      <button id="btnSignup" class="newLaura">Sign up</button><br>
+      <button id="btnLogout" class="newLaura" style="visibility:hidden">Log out</button>
+    </div>
+      <script src="index.js"></script>
+  </body>
+</html>
+<!--GİRİŞ KAYIT OL LOGIN SAYFASI -->

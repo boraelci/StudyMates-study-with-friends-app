@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Update Profile Info</title>
+
+    <!-- update the version number as needed -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <button id="btnLogout" style="float:right; margin-top:-24vh">Log out</button>
+
+    <div style="text-align:center; margin-top:25vh; transform: scale(1.25, 1.25)">
+      <input id="userName" type="text" style="width:200px" placeholder="username"><br>
+      <input id="firstName" type="text" style="width:200px" placeholder="First Name"><br>
+      <input id="lastName" type="text" style="width:200px" placeholder ="Last Name"><br>
+      <select id="grade" type="select" style="width:200px" placeholder = "Grade">
+        <option selected disabled hidden>Class Year</option>
+        <option value="1">Freshman</option>
+        <option value="2">Sophomore</option>
+        <option value="3">Junior</option>
+        <option value="4">Senior</option>
+        <option value="5">Grad</option></select><br>
+        <button id="btnCont" style="width:200px" class="button-primary" >Continue</button>
+    </div>
+
+      <script src="main.js"></script>
+  </body>
+</html>
+<!--INFO REQUIRED FOR SIGNUP -->
